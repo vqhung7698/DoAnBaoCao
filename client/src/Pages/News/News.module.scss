@@ -1,0 +1,117 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #eae9e9;
+    padding-top: 115px;
+}
+
+.main {
+    flex: 1;
+    padding: 20px 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề chính */
+h2 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Bài tin nổi bật */
+.featured-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.featured-image {
+    width: 80%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.featured-title {
+    font-size: 24px;
+    color: #0073e6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.featured-summary {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Danh sách tin tức nhỏ */
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+.news-image {
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.news-title {
+    font-size: 18px;
+    color: #0073e6;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.news-summary {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .news-list {
+        grid-template-columns: 1fr;
+    }
+}

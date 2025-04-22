@@ -1,0 +1,126 @@
+// .wrapper {
+//     width: 100%;
+// }
+
+// .inner {
+//     width: 90%;
+//     height: 100%;
+//     margin: 0px auto;
+//     padding: 20px 0px;
+//     .title {
+//         h2 {
+//             text-align: center;
+//             font-size: 24px;
+//             margin-bottom: 20px;
+//         }
+//     }
+// }
+
+// .card-body {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: 20px;
+// }
+
+// .button-group {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 20px;
+//     button {
+//         background-color: #000;
+//         color: #fff;
+//         padding: 10px 20px;
+//         border-radius: 5px;
+//     }
+//     button:hover {
+//         background-color: #fff;
+//         color: #000;
+//         border: 1px solid #000;
+//         transition: all 0.3s ease;
+//         cursor: pointer;
+//     }
+// }
+
+
+.wrapper {
+    width: 100%;
+}
+
+.inner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    .title {
+        h2 {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.category {
+    margin-bottom: 40px;
+
+    h3 {
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 15px;
+        color: #333;
+        border-left: 4px solid #000;
+        padding-left: 10px;
+    }
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    button {
+        background-color: #000;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #fff;
+        color: #000;
+        border: 2px solid #000;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card-body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .card-body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
